@@ -55,7 +55,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -AddToPath
 在源电脑把仓库推到远程（只需做一次）：
 
 ```powershell
-cd C:\00-projects\phone-controller
+cd <source-path>
 git remote add origin <你的仓库 URL>
 git push -u origin main
 ```
@@ -73,7 +73,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 如果源目录本身是 git 仓库，可以直接从本地路径 clone：
 
 ```powershell
-git clone C:\00-projects\phone-controller C:\tools\phone-controller
+git clone <source-path> <target-path>
 cd C:\tools\phone-controller
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
@@ -214,4 +214,9 @@ phone-controller.cmd        命令入口（用 %~dp0 定位同目录脚本）
 SKILL.md                    agent 使用说明
 install.ps1 / uninstall.ps1 安装与卸载
 VERSION                     版本号
+LICENSE                     MIT 许可证
 ```
+
+## 九、License
+
+MIT License. Copyright (c) 2026 北京夙棠科技有限公司 (Suttech Technology Co., Ltd.). 详见 [LICENSE](LICENSE)。

@@ -32,6 +32,7 @@ phone-controller/
   install.ps1               # copy to ~/.local/bin + skill dirs
   uninstall.ps1
   README.md
+  LICENSE
   VERSION
 ```
 
